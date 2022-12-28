@@ -4,6 +4,16 @@ body {
     background-color: rgb(228, 222, 222);
 }
 
+.main {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    margin-top: -20%;
+}
+
 .title{
     text-align: center;
 }
@@ -18,48 +28,60 @@ body {
 
 #taskListDone li {
     text-decoration: line-through;
-    color: red;
+    color: pink;
 }
 
 .itemCont {
     width: 90%;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: white;
     align-self: center;
-    min-height: 50px;
-    max-height: 200px;
-    overflow:scroll;
+    min-height: 120px;
+    max-height: 240px;
+    overflow:scroll !important;
+    padding: 0px !important;
+    
 }
 
 li {
-    height: 50px;
+    height: 60px;
+    padding: 0px !important;
     border-width: 0 0 1px 0 !important;
-    border-radius: 0 !important;
+    border-radius: 15px !important;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word !important;
 }
 
 
 .icon {
-    background-color: #d0a9f0;
+    background-color: #59A5D8;
+    color: white;
+    padding: 5px;
     width: 20px;
     height: 20px;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .footer {
-    background-color: #591b8d !important ;
+    background-color: #386FA4 !important ;
+    width: 85% !important;
     height: 50px;
     border-radius: 25px !important;
-    padding-left: 15px !important;
 }
 .footer:focus {
     background-color: white !important;
     color: black;
 }
 
+.footer:focus::placeholder {
+    color: grey !important;
+}
+
 .footer::placeholder {
     color: white;
-    font-weight: normal;
+    font-weight: bold;
 }
