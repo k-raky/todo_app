@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width" >
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width">
 
     <!-- <link rel="stylesheet" href="lib/themes/theme.min.css" />
     <link rel="stylesheet" href="lib/themes/jquery.mobile.icons.min.css" />
@@ -50,10 +50,8 @@
 </head>
 
 <body>
-
-    <div data-role="page">
-        
-    <div  class="d-flex justify-content-evenly flex-column pb-5" style="background-color: #386FA4; min-height: 200px; width: 100%;">
+ 
+    <div  class="d-flex justify-content-center flex-column " style="background: #DE7C80; min-height: 280px; width: 100%;">
         <div class="d-flex w-100 justify-content-between p-1" style="height: fit-content;">
             <p class="fs-4 fw-lighter text-white" id="date"></p>
             <i class="end-0 bottom-0 icon p-2 shadow fa-solid fa-xmark" onclick="reinitialiser()"></i>
@@ -71,9 +69,7 @@
 
     </div>
     
-    <input type="text" class="footer form-control align-self-center m-auto mb-3 fw-bold text-center fixed-bottom shadow" data-role="footer" name="buttonAdd" id="task" aria-describedby="helpId" placeholder="Ajouter une tache"/>
-
-    </div>
+    <input type="text" class="footer form-control align-self-center m-auto mb-5 fw-bold text-center fixed-bottom shadow-lg" data-role="footer" name="buttonAdd" id="task" aria-describedby="helpId" placeholder="Ajouter une tache"/>
 
 </body>
 

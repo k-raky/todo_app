@@ -15,9 +15,13 @@
   "cordova": {
     "platforms": [
       "ios"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-headercolor": {}
+    }
   },
   "devDependencies": {
-    "cordova-ios": "^6.2.0"
+    "cordova-ios": "^6.2.0",
+    "cordova-plugin-headercolor": "github:tomloprod/cordova-plugin-headercolor"
   }
 }
